@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Me a Crypto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="coffee.png" alt="Coffee" class="coffee-img">
+        <h1>Buy Me a Coffee</h1>
+        <p>If you enjoy my work, consider sending a little crypto love!</p>
+        <div class="crypto-grid">
+            <div class="crypto-box" onclick="copyAddress('bitcoin')">
+                <img src="icons/bitcoin.png" alt="Bitcoin">
+                <span>BTC</span>
+            </div>
+            <div class="crypto-box" onclick="copyAddress('ethereum')">
+                <img src="icons/ethereum.png" alt="Ethereum">
+                <span>ETH</span>
+            </div>
+            <div class="crypto-box" onclick="copyAddress('usdt')">
+                <img src="icons/usdt.png" alt="USDT">
+                <span>USDT</span>
+            </div>
+            <div class="crypto-box" onclick="copyAddress('bnb')">
+                <img src="icons/bnb.png" alt="BNB">
+                <span>BNB</span>
+            </div>
+            <div class="crypto-box" onclick="copyAddress('matic')">
+                <img src="icons/matic.png" alt="MATIC">
+                <span>MATIC</span>
+            </div>
+        </div>
+        <p class="copied" id="copied">Address copied!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
