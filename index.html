@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Me a Crypto!</title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Buy Me a Crypto! <span class="coffee">☕</span></h1>
+    <p>Love what I do? You can support my work by sending any amount using your favorite cryptocurrency. Just click on the crypto box to copy the address. Every bit helps and means a lot!</p>
+    <div class="crypto-list">
+      <div class="card" onclick="copyToClipboard('btc')">
+        <img src="icons/bitcoin.png" alt="Bitcoin"/><h2>Bitcoin</h2><p>BTC</p><span id="btc">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</span><div class="copied" id="copied-btc">Copied!</div>
+      </div>
+      <div class="card" onclick="copyToClipboard('eth')">
+        <img src="icons/ethereum.png" alt="Ethereum"/><h2>Ethereum</h2><p>ETH</p><span id="eth">0x742d35Cc6634C0532925a3b844Bc454e4438f44e</span><div class="copied" id="copied-eth">Copied!</div>
+      </div>
+      <div class="card" onclick="copyToClipboard('usdt-erc')">
+        <img src="icons/usdt.png" alt="USDT ERC20"/><h2>USDT</h2><p>(ERC20)</p><span id="usdt-erc">0xdAC17F958D2ee523a2206206994597C13D831ec7</span><div class="copied" id="copied-usdt-erc">Copied!</div>
+      </div>
+      <div class="card" onclick="copyToClipboard('bnb')">
+        <img src="icons/bnb.png" alt="BNB"/><h2>BNB</h2><p>BSC</p><span id="bnb">bnb1grpf0955h0ykzq3ar5nmum7y6gdfl6lxfn46h2</span><div class="copied" id="copied-bnb">Copied!</div>
+      </div>
+      <div class="card" onclick="copyToClipboard('usdt-trc')">
+        <img src="icons/usdt.png" alt="USDT TRC20"/><h2>USDT</h2><p>(TRC20)</p><span id="usdt-trc">TXKptb5zGkVCVzPwXzEDxNQf6WTvZg8j4A</span><div class="copied" id="copied-usdt-trc">Copied!</div>
+      </div>
+      <div class="card" onclick="copyToClipboard('matic')">
+        <img src="icons/polygon.png" alt="Polygon"/><h2>Polygon</h2><p>MATIC</p><span id="matic">0x0000000000000000000000000000000000001010</span><div class="copied" id="copied-matic">Copied!</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
